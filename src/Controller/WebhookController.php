@@ -31,7 +31,7 @@ class WebhookController {
 
 		$logger->debug( $request->getContent() );
 
-		$hmac = $request->headers->get( 'HTTP_X_SONAR_WEBHOOK_HMAC_SHA256' );
+		$hmac = $request->headers->get( 'X-Sonar-Webhook-HMAC-SHA256' );
 		$expected_hmac = hash_hmac( 'sha256', $request->getContent(), $_SERVER['SONARQUBE_HMAC'] );
 		if ( !$hmac || $hmac !== $expected_hmac ) {
 			$logger->error( 'HMAC validation error.' );
