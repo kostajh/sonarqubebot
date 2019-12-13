@@ -2,20 +2,26 @@
     "monolog/monolog": {
         "version": "1.24.0"
     },
+    "php": {
+        "version": "7.3"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/event-dispatcher": {
+        "version": "1.0.0"
+    },
     "psr/log": {
         "version": "1.1.0"
     },
-    "psr/simple-cache": {
-        "version": "1.0.1"
-    },
     "symfony/cache": {
         "version": "v4.2.4"
+    },
+    "symfony/cache-contracts": {
+        "version": "v2.0.1"
     },
     "symfony/config": {
         "version": "v4.2.4"
@@ -33,20 +39,20 @@
             "config/bootstrap.php"
         ]
     },
-    "symfony/contracts": {
-        "version": "v1.0.2"
-    },
-    "symfony/debug": {
-        "version": "v4.2.4"
-    },
     "symfony/dependency-injection": {
         "version": "v4.2.4"
     },
     "symfony/dotenv": {
         "version": "v4.2.4"
     },
+    "symfony/error-handler": {
+        "version": "v5.0.1"
+    },
     "symfony/event-dispatcher": {
         "version": "v4.2.4"
+    },
+    "symfony/event-dispatcher-contracts": {
+        "version": "v2.0.1"
     },
     "symfony/filesystem": {
         "version": "v4.2.4"
@@ -85,11 +91,20 @@
             "src/Kernel.php"
         ]
     },
+    "symfony/http-client": {
+        "version": "v5.0.1"
+    },
+    "symfony/http-client-contracts": {
+        "version": "v2.0.1"
+    },
     "symfony/http-foundation": {
         "version": "v4.2.4"
     },
     "symfony/http-kernel": {
         "version": "v4.2.4"
+    },
+    "symfony/mime": {
+        "version": "v5.0.1"
     },
     "symfony/monolog-bridge": {
         "version": "v4.2.4"
@@ -108,8 +123,17 @@
             "config/packages/test/monolog.yaml"
         ]
     },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.13.1"
+    },
     "symfony/polyfill-mbstring": {
         "version": "v1.10.0"
+    },
+    "symfony/polyfill-php72": {
+        "version": "v1.13.1"
+    },
+    "symfony/polyfill-php73": {
+        "version": "v1.13.1"
     },
     "symfony/routing": {
         "version": "4.2",
@@ -125,6 +149,12 @@
             "config/packages/test/routing.yaml",
             "config/routes.yaml"
         ]
+    },
+    "symfony/service-contracts": {
+        "version": "v2.0.1"
+    },
+    "symfony/var-dumper": {
+        "version": "v5.0.1"
     },
     "symfony/var-exporter": {
         "version": "v4.2.4"
