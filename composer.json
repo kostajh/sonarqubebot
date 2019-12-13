@@ -1,5 +1,5 @@
 {
-	"name": "kostajh/sonarqubebot",
+    "name": "kostajh/sonarqubebot",
     "description": "Post comments to Gerrit from SonarQube analyses",
     "type": "project",
     "license": "GPL-2.0-or-later",
@@ -8,7 +8,7 @@
             "name": "Kosta Harlan",
             "email": "kharlan@wikimedia.org"
         }
-	],
+    ],
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
@@ -56,7 +56,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "phpcs": "phpcs -p -s"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -66,5 +67,8 @@
             "allow-contrib": false,
             "require": "5.0.*"
         }
+    },
+    "require-dev": {
+        "mediawiki/mediawiki-codesniffer": "^28.0"
     }
 }
