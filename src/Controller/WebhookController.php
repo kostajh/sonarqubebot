@@ -42,7 +42,7 @@ class WebhookController {
 			// Skip commenting on master for now.
 			return new Response( 'No comment.' );
 		}
-		$passedQualityGate = $analysisJson['qualityGate']['status'] === 'SUCCESS';
+		$passedQualityGate = $analysisJson['qualityGate']['status'] === 'OK';
 		$successMessage = $passedQualityGate ?
 			'✔ Quality gate passed!' :
 			'❌ Quality gate failed';
